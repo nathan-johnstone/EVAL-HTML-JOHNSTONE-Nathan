@@ -121,7 +121,7 @@ article, section{
             background: var(--alt);
             margin: 0;
             padding: 20px;
-            white-space: normal;
+            white-space: pre-wrap;
         }
     }
 }
