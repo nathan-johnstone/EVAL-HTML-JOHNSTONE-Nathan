@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction HTML - Digital Student</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.svg">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img alt="logo du site" src="images/logo-baseline.svg"></a>
+        <nav aria-label="navigation principale">
+            <a href="#introduction">Introduction</a>
+            <a href="#pourquoi">Pourquoi</a>
+            <a href="#balises">Balises</a>
+            <a href="#tips">Tips</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h1>Le guide HTML/CSS pour Débutants</h1>
+            <p>Dans ce guide, nous allons vous présenter ce qui est le HTML (<em>HyperText Markup Language</em>) et le CSS (<em>Cascading Style Sheets</em>), et vous donner les bases neccessaires pour structurer votre premier site web. Grace à ce site, vous allez découvrir les balises des base du HTML ainsi que quelques bonnes pratiques essentiels pour garantir l'accessibilité.</p>
+        </section>
+        <article id="pourquoi">
+            <h2>Pourquoi apprendre HTML/CSS ?</h2>
+            <ul>
+                <li><p><strong>HyperText Markup Language</strong> — ou HTML — (<em>langage de balisage</em>) est la technologie qui définit le contenu et la structure de n'importe quel site Web. Bien rédigé, il doit aussi définir la sémantique (le sens) du contenu de manière lisible par une machine, ce qui est essentiel pour l'accessibilité, le référencement et l'exploitation des fonctionnalités intégrées fournies par les navigateurs afin que le contenu fonctionne de façon optimale.</p></li>
+                <li><p><strong>Les Cascading StyleSheets</strong> — ou CSS — (<em>Feuilles de style en cascade</em>) sont la première technique à apprendre après le HTML. Alors que HTML s'utilise pour définir la structure et la sémantique du contenu, les CSS sont employées pour composer et déterminer l'apparence de ce contenu. Ainsi par exemple, vous utiliserez les CSS pour modifier les polices, la couleur, la taille et l'espacement de votre contenu, pour le répartir sur plusieurs colonnes ou bien pour ajouter des animations et autres fonctionnalités décoratives.</p></li>
+            </ul>
+        </article>
+        <article id="balises">
+            <h2>Les balises de base</h2>
+            <div>
+                <h3>&lt;h1&gt; à &lt;h6&gt;</h3>
+                <p>Les titres de section sont séparés en six niveaux. <strong>&lt;h1&gt;</strong> correspond au niveau de section le plus haut et <strong>&lt;h6&gt;</strong> correspond au niveau le plus faible.</p>
+            </div>
+            <div>
+                <pre><code>&lt;h1&gt;Je suis un le plus gros titre&lt;/h1&gt;
+&lt;h2&gt;Je suis un tres gros titre&lt;/h2&gt;
+&lt;h3&gt;Je suis un gros titre&lt;/h3&gt;
+&lt;h4&gt;Je suis un titre&lt;/h4&gt;
+&lt;h5&gt;Je suis un petit titre&lt;/h5&gt;
+&lt;h6&gt;Je suis un très petit titre&lt;/h6&gt;</code></pre>
+            </div>
+            <div>
+                <h3>&lt;p&gt;</h3>
+                <p>Les paragraphes sont généralement représentés dans les médias visuels comme des blocs de texte séparés des blocs adjacents par des lignes vides et/ou une indentation de première ligne.</p>
+            </div>
+            <div>
+                <pre><code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing 
+elit. Vero consequuntur, voluptas possimus excepturi 
+fugit ipsum tempore obcaecati magnam quia quidem dicta 
+magni! Delectus veniam nisi porro cumque optio incidunt 
+laborum rerum maiores beatae quaerat sapiente hic neque 
+quos inventore magnam magni, suscipit harum minima 
+maxime fugiat iure odit expedita ipsum?&lt;/p&gt;</code></pre>
+            </div>
+            <div>
+                <h3>&lt;a&gt;</h3>
+                <p>L'élément d'ancre, avec son attribut <strong>href</strong>, crée un hyperlien vers des pages web, des fichiers, des adresses e-mail, des emplacements dans la même page ou toute autre ressource accessible par une URL.</p>
+            </div>
+            <div>
+                <pre><code>&lt;a href="https://monsite.fr/"&gt;Cliquez ici&lt;/a&gt;</code></pre>
+            </div>
+            <div>
+                <h3>&lt;img&gt;</h3>
+                <p>Img permet d'intégrer une image dans un document. L'attribut <strong>src</strong> contient le chemin vers l'image à intégrer tandis que l'attribut <strong>alt</strong> contient un texte de remplacement pour l'image, qui est obligatoire et extrêmement utile pour l'accessibilité</p>
+            </div>
+            <div>
+                <pre><code>&lt;img alt"logo du site" src="./logo.png"&gt;</code></pre>
+            </div>
+            <div>
+                <h3>&lt;ul&gt; & &lt;li&gt;</h3>
+                <p>Les listes non ordonées sert à regrouper une collection d'éléments qui n'ont pas d'ordre numérique, et leur ordre dans la liste n'a pas de signification. <strong>&lt;li&gt;</strong> est utilisé pour représenter un élément dans une liste.</p>
+            </div>
+            <div>
+                <pre><code>&lt;ul&gt;
+    &lt;li&gt;Element 1&lt;/li&gt;
+    &lt;li&gt;Element 2&lt;/li&gt;
+    &lt;li&gt;Element 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </article>
+        <article id="tips">
+            <h2>Tips & bonnes pratiques</h2>
+            <p>Quelques tips et bonnes pratiques à respecter :</p>
+            <ul>
+                <li><p><strong>Respecter la sémantique : </strong>En utilisant des éléments spécifiquement conçus pour décrire la structure d'une page web, nous pouvons améliorer l'accessibilité du contenu et rendre notre site plus compréhensible par les lecteurs d’écran ou autres technologies d’assistance.</p></li>
+                <li><p><strong>ARIA (Accessible Rich Internet Applications) : </strong>Les rôles ARIA sont des atributs que nous pouvons ajouter aux balises HTML existantes ou aux éléments personnalisés pour fournir des informations supplémentaires sur leur foncton et leur comportement, ce qui améliore l'accessibilité du contenu web.</p></li>
+                <li><p><strong>Contrastes de couleur : </strong>Le rapport de contraste entre le texte (couleur du premier plan) et son arrière-plan est un aspect clé pour garantr une bonne lisibilité dans diverses conditons d'affichage. Un faible rapport de contraste peut rendre difficile la lecture du contenu, en particulier pour les personnes ayant des déficiences visuelles ou qui utlisent certaines technologies d’assistance comme les lecteurs d’écran et les zoom textuel.</p></li>
+                <li><p><strong>Taille du texte : </strong>La geston de la taille du texte dans HTML5 et CSS3 est essentielle pour garantir une expérience utlisateur optimale, en particulier lorsque l'on souhaite assurer une bonne accessibilité web et un contenu adaptable à différents appareils.</p></li>
+                <li><p><strong>Alt text : </strong>Dans le monde du développement web, il est essentiel de rendre les sites web accessibles à tous, y compris aux personnes qui utilisent des lecteurs d'écran ou ont des difficultés visuelles. Cela peut être accompli en fournissant un texte alternatif (alt text) approprié pour toutes vos images et icônes.</p></li>
+                <li><p><strong>Test et vérification : </strong>Le fait d'identifier et de résoudre les problèmes liés à l’accessibilité améliore non seulement le confort des utilisateurs, mais aide également à augmenter votre site dans les classements de recherche (SEO) en s'assurant qu'il est aussi largement accessible que possible.</p></li>
+            </ul>
+        </article>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous avez une question ? N'hésitez pas a nous envoyer un message via le formulaire ci-dessous.</p>
+            <form action="#" method="POST">
+                <div>
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                </div>
+                <div>
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                </div>
+                <div id="check">
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Je souhaite m'abonner à la newsletter</label>
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                    <button type="reset">Effacer</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div id="copyright">
+             <a href="index.html"><img alt="logo du site" src="images/logo.svg"></a>
+             <p>&copy; 2026 - Digital Student</p>
+        </div>
+        <menu aria-label="navigation secondaire">
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Politique de cookies</a></li>
+        </menu>
+        <div id="reseaux" aria-label="nos reseaux sociaux">
+            <a href="#"><img alt="logo de facebook, cliquez pour accèder à notre page facebook" src="images/facebook.png"></a>
+            <a href="#"><img alt="logo d'instagram, cliquez pour accèder à notre page instagram" src="images/instagram.png"></a>
+            <a href="#"><img alt="logo de whatsapp, cliquez pour nous contacter via whatsapp" src="images/whatsapp.png"></a>
+            <a href="#"><img alt="logo de x, cliquez pour accèder à notre page x (ex. twitter)" src="images/x.png"></a>
+        </div>
+    </footer>
+</body>
+</html>
