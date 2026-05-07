@@ -155,8 +155,6 @@ form{
         width: 100%;
 
         &:focus{
-            outline-offset: 2px;
-            outline-color: var(--secondary);
             box-shadow: none;
         }
     }
